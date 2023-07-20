@@ -63,8 +63,8 @@ img {
 .btn {
     display: block;
     font-family: var(--fontFamilyExtra);
-    background-color: var(--blueColor);
-    color: var(--whiteColor);
+    background-color: #186EF2;
+    color: white;
     border-radius: 5rem;
     position: relative;
     overflow: hidden;
@@ -112,6 +112,7 @@ img {
     padding-right: 1.5rem;
     margin-right: auto;
     margin-left: auto;
+
     width: 100%;
 }
 
@@ -135,7 +136,7 @@ img {
 
 @media(min-width: 1200px) {
     .container {
-        width: 1200px;
+        width: 1185px;
     }
 }
 
@@ -270,6 +271,9 @@ header .container .toggle-btn.active span:nth-child(2) {
 .home {
     min-height: 100vh;
     padding-top: 5rem;
+    background-image: url(../img/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home .container .content {
@@ -304,23 +308,23 @@ header .container .toggle-btn.active span:nth-child(2) {
 
 .home .container .content .left h2 {
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     margin-bottom: .8rem;
-    line-height: 1.3;
+    line-height: 1.6;
 }
 
 
 
 .text-wrapper {
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     margin-bottom: .8rem;
     line-height: 1.1;
 }
 
 .animated-words {
     display: inline-block;
-    min-width: 220px;
+    min-width: 160px;
     vertical-align: top;
     position: relative;
 
@@ -464,9 +468,9 @@ header .container .toggle-btn.active span:nth-child(2) {
     /* border-radius: 47%; */
 }
 
-.home .container {
-    background-image: url(../img/background.svg);
-}
+/* .home .container {
+   
+} */
 
 /*End Home Section*/
 
@@ -1086,14 +1090,17 @@ header .container .toggle-btn.active span:nth-child(2) {
 
 .contact .container .contact-inner {
     margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
-.contact .container .contact-inner .contact-left {
+/* .contact .container .contact-inner .contact-left {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 5rem;
-}
+} */
 
 .contact .container .contact-inner .contact-left .box {
     display: flex;
@@ -1280,9 +1287,10 @@ footer .container p a:hover {
     }
 
 }
-@media(max-width: 992px){
 
-    .home .container{
+@media(max-width: 992px) {
+
+    .home .container {
         background: none;
     }
 
@@ -1363,12 +1371,12 @@ footer .container p a:hover {
     }
 
     .home .container .content .left h3 {
-        font-size: 7.5rem;
+        font-size: 5rem;
         margin-bottom: -1.6rem;
     }
 
     .home .container .content .left p {
-        font-size: 2rem;
+        font-size: 17px;
     }
 
     .home .container .content .left {
@@ -1562,36 +1570,76 @@ footer .container p a:hover {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 10px;
+    /* border-radius: 8px;
+    background: #292738;
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.10); */
 }
 
 .right2 h4 {
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    color: #FFF;
+    /* font-family: Jost; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28.8px;
+    /* 120% */
 
 }
+
+.right2 p {
+    color: #67687A;
+    /* font-family: Kumbh Sans; */
+    padding: 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
 
 .right01 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 2rem;
+
+
+
     flex-direction: row;
-    padding-block: 40px;
+    /* padding-block: 40px; */
 }
-.left{
+
+.left {
     flex: 40%;
 }
-.right{
-    flex: 60%   ;
+
+.right {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
     margin-left: 4.3rem;
 }
-.right h1{
+
+/* .bg-gray{
+    border-radius: 8px;
+    background: #292738;
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.10);
+} */
+
+.right h1 {
     color: #FFF;
-font-family: var(--fontFamilyExtra);;
-font-size: 2.625rem;
-font-style: normal;
-font-weight: 600;
-line-height: 3.3125rem; /* 126.19% */
-letter-spacing: 0.02625rem;
-padding-right: 23rem;
-padding-block: 4rem;
+    font-family: var(--fontFamilyExtra);
+    ;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.3125rem;
+    /* 126.19% */
+    letter-spacing: 0.02625rem;
+    padding-right: 23rem;
+    /* padding-block: 4rem; */
 }
