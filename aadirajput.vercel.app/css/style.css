@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -134,7 +135,7 @@ img {
 
 @media(min-width: 1200px) {
     .container {
-        width: 1170px;
+        width: 1200px;
     }
 }
 
@@ -289,26 +290,156 @@ header .container .toggle-btn.active span:nth-child(2) {
 
 .home .container .content .left h3 {
     font-size: 5rem;
+    margin-bottom: -1rem;
+    line-height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .container .content .left h3 img {
+    mix-blend-mode: lighten;
+}
+
+.home .container .content .left h2 {
+    text-align: center;
+    font-size: 6.5rem;
+    margin-bottom: .8rem;
+    line-height: 1.3;
+}
+
+
+
+.text-wrapper {
+    text-align: center;
+    font-size: 6.5rem;
     margin-bottom: .8rem;
     line-height: 1.1;
 }
 
-.home .container .content .left h3 span {
-    color: var(--blueColor);
+.animated-words {
+    display: inline-block;
+    min-width: 220px;
+    vertical-align: top;
+    position: relative;
+
 }
+
+
+.animated-words span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+    color: #dde78c;
+}
+
+.animated-words span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+    color: #dde78c;
+}
+
+.animated-words span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s;
+    color: #dde78c;
+}
+
+.animated-words span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+    color: #dde78c;
+}
+
+.animated-words span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
+    color: #dde78c;
+}
+
+.animated-words span {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    color: #dde78c;
+    -webkit-animation: animateWord 18s ease-out infinite 0s;
+    -ms-animation: animateWord 18s ease-out infinite 0s;
+    animation: animateWord 18s ease-out infinite 0s;
+}
+
+@-webkit-keyframes animateWord {
+    0% {
+        opacity: 0;
+    }
+
+    2% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    5% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    17% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    20% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .home .container .content .left p {
     text-transform: capitalize;
     font-family: var(--fontFamilyExtra);
     font-size: 1.7rem;
     font-weight: 500;
-    margin-bottom: 3.5rem;
+    margin-bottom: 0.2rem;
+    line-height: 2;
     color: var(--whiteColor);
 }
 
 .home .container .content .left a {
     padding: 1.3rem 3.8rem;
     font-weight: 600;
+    margin-top: 2rem;
 }
 
 .home .container .content .left a span {
@@ -332,7 +463,8 @@ header .container .toggle-btn.active span:nth-child(2) {
     max-height: 20rem;
     /* border-radius: 47%; */
 }
-.home .container{
+
+.home .container {
     background-image: url(../img/background.svg);
 }
 
@@ -1099,38 +1231,48 @@ footer .container p a:hover {
         font-size: 6.5rem;
         margin-bottom: 1.2rem;
     }
+
     .home .container .content .left p {
         font-size: 1.9rem;
     }
+
     .boxes .container .content {
         grid-template-columns: repeat(auto-fill, minmax(calc(50% - 2.5rem), 1fr));
         column-gap: 2.5rem;
     }
+
     .boxes .container .content .box {
         flex-basis: calc(50% - 2.5rem);
         padding: 6rem;
     }
+
     .about .container .content .right .list>ul {
         display: flex;
         padding-bottom: 0;
     }
+
     .about .container .content .right .list>ul>li {
         width: 50%;
     }
+
     .about .container .content .right .list>ul>li:first-child {
         border-right: .2rem solid #625a7d;
     }
+
     .about .container .content .right .list ul li .item {
         margin: 0;
         min-width: 100%;
     }
+
     .testimonials .testimonials-container .testimonial-card p {
         font-size: 2.7rem;
         max-width: 94rem;
     }
+
     .testimonials .testimonials-container .testimonial-card .profile .details h3 {
         font-size: 2.4rem;
     }
+
     .contact .container .contact-inner .contact-right form .form-group {
         flex-direction: row;
     }
@@ -1143,13 +1285,16 @@ footer .container p a:hover {
         padding: 3rem 0;
         transition: all .5s ease-in-out;
     }
+
     header.active {
         background-color: var(--bgColor);
         padding: 2rem 0;
     }
+
     header .container .toggle-btn {
         display: none;
     }
+
     header .container nav {
         position: relative;
         top: 0 !important;
@@ -1163,126 +1308,158 @@ footer .container p a:hover {
         gap: 6rem;
         z-index: 1;
     }
+
     header .container nav .navbar {
         flex-direction: row;
         gap: 3rem;
     }
+
     header .container nav .navbar li a:hover,
     header .container nav .navbar li a.active {
         color: var(--blueColor);
     }
+
     header .container nav .social-media {
         display: flex;
         align-items: center;
         gap: 1.2rem;
         position: relative;
     }
+
     header .container nav .social-media:before {
         content: "|";
         position: absolute;
         left: -3rem;
         top: -.2rem;
     }
+
     header .container nav .social-media li a {
         color: var(--whiteColor);
         transition: all .5s ease;
     }
+
     header .container nav .social-media li a:hover {
         color: var(--blueColor)
     }
+
     .home {
         padding-top: 9rem;
     }
+
     .home .container .content {
         flex-direction: row;
         height: calc(100vh - 9rem);
     }
+
     .home .container .content .left h3 {
         font-size: 7.5rem;
-        margin-bottom: 1.4rem;
+        margin-bottom: -1.6rem;
     }
+
     .home .container .content .left p {
         font-size: 2rem;
     }
+
     .home .container .content .left {
         align-items: flex-start;
         text-align: left;
         width: 50%;
     }
+
     .home .container .content .right {
         width: 50%;
         padding-left: 8rem;
         margin-bottom: 0;
     }
+
     .home .container .content .right img {
         max-width: 40rem;
         max-height: 40rem;
 
     }
+
     .boxes .container .content {
         grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 2.5rem), 1fr));
     }
+
     .title h3 {
         font-size: 4rem;
     }
+
     .title span {
         font-size: 2.1rem;
     }
+
     .about .container .content {
         flex-direction: row;
         gap: 2rem;
     }
+
     .about .container .content .left,
     .about .container .content .right {
         width: 50%;
     }
+
     .skills .container .skills-container {
         flex-direction: row;
     }
+
     .skills .container .skills-container .skill-left,
     .skills .container .skills-container .skill-right {
         width: 50%;
     }
+
     .skills .container .skills-container .skill-left {
         padding-right: 6.7rem;
     }
+
     .skills .container .skills-container .skill-right {
         padding-left: 6.7rem;
         margin-bottom: .7rem;
         padding-top: 3rem;
     }
+
     .resume .container .resume-container {
         display: flex;
     }
+
     .resume .container .resume-container .resume-left,
     .resume .container .resume-container .resume-right {
         width: 50%;
     }
+
     .resume .container .resume-container .resume-left {
         padding-right: 5rem;
         margin-bottom: 0;
     }
+
     .resume .container .resume-container .resume-right {
         padding-left: 5rem;
     }
+
     .resume .container .resume-container .resume-list ul::before {
         left: 3.6rem;
     }
+
     .resume .resume-container .resume-list ul li .list-inner .icon {
         width: 7.2rem;
         height: 7.2rem;
     }
+
     .contact .container .contact-inner {
         display: flex;
     }
+
     .contact .container .contact-inner .contact-left,
     .contact .container .contact-inner .contact-right {
         width: 50%;
     }
+
     .contact .container .contact-inner .contact-left .box .icon {
         width: 8.8rem;
         height: 8.8rem;
     }
+
     .contact .container .contact-inner .contact-left .box .details h3 {
         font-size: 2.8rem;
     }
@@ -1292,12 +1469,15 @@ footer .container p a:hover {
     .about .container .content .left .big-img {
         text-align: right;
     }
+
     .about .container .content .left .big-img img {
         /* max-width: 38rem; */
     }
+
     .about .container .content .left .big-img .small-img .in {
         display: block;
     }
+
     .about .container .content .left .big-img .small-img .in .second-img {
         background-image: url(../img/2.jpg);
         position: absolute;
@@ -1307,6 +1487,7 @@ footer .container p a:hover {
         top: -.4rem;
         left: 32%;
     }
+
     .about .container .content .left .big-img .badge {
         display: flex;
         align-items: center;
@@ -1315,15 +1496,18 @@ footer .container p a:hover {
         top: 10.5rem;
         right: 81%;
     }
+
     .about .container .content .left .big-img .badge i {
         color: var(--whiteColor);
     }
+
     .about .container .content .left .big-img .experience {
         display: block;
         top: 100%;
         right: 10%;
         margin-top: 2rem;
     }
+
     .about .container .content .left .big-img .experience .inner::before {
         content: "";
         position: absolute;
@@ -1332,9 +1516,11 @@ footer .container p a:hover {
         left: 0;
         background-color: var(--blueColor);
     }
+
     .about .container .content .left .big-img .experience .inner h3 {
         font-size: 4.5rem;
     }
+
     .about .container .content .left .big-img .experience .inner span {
         font-size: 1.6rem;
         line-height: 2rem;
@@ -1349,6 +1535,7 @@ footer .container p a:hover {
     .about .container .content .left .big-img .badge {
         right: 65%;
     }
+
     .about .container .content .left .big-img .small-img .in .second-img {
         left: 65%;
     }
@@ -1359,18 +1546,19 @@ footer .container p a:hover {
 
 
 
-.right1{
+.right1 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.right2 h4{
+.right2 h4 {
     padding-bottom: 10px;
 
 }
-.right01{
+
+.right01 {
     display: flex;
     align-items: center;
     justify-content: center;
