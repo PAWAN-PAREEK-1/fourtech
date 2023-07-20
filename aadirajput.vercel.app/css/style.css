@@ -1224,6 +1224,8 @@ footer .container p a:hover {
     body {
         font-size: 1.6rem;
     }
+
+
 }
 
 @media(min-width: 768px) {
@@ -1276,6 +1278,15 @@ footer .container p a:hover {
     .contact .container .contact-inner .contact-right form .form-group {
         flex-direction: row;
     }
+
+}
+@media(max-width: 992px){
+
+    .home .container{
+        background: none;
+    }
+
+
 }
 
 @media(min-width: 992px) {
@@ -1562,6 +1573,25 @@ footer .container p a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap !important;
+    gap: 1.2rem;
     flex-direction: row;
+    padding-block: 40px;
+}
+.left{
+    flex: 40%;
+}
+.right{
+    flex: 60%   ;
+    margin-left: 4.3rem;
+}
+.right h1{
+    color: #FFF;
+font-family: var(--fontFamilyExtra);;
+font-size: 2.625rem;
+font-style: normal;
+font-weight: 600;
+line-height: 3.3125rem; /* 126.19% */
+letter-spacing: 0.02625rem;
+padding-right: 23rem;
+padding-block: 4rem;
 }
