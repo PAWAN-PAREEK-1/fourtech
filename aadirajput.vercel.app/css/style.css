@@ -26,8 +26,13 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 3rem;
-    background: linear-gradient(180deg, #000A1F 0%, #000C2F 100%);
+    /* background: linear-gradient(180deg, #000A1F 0%, #000C2F 100%); */
     color: var(--mainColor);
+    background: url(../img/1.jpg);
+    background-repeat: repeat-y;
+background-size: cover;
+max-width: 1440px;
+margin:auto;
 
 }
 
@@ -332,30 +337,30 @@ header .container .toggle-btn.active span:nth-child(2) {
 
 
 .animated-words span:nth-child(2) {
+    -webkit-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    color: #dde78c;
+}
+
+.animated-words span:nth-child(3) {
     -webkit-animation-delay: 3s;
     -ms-animation-delay: 3s;
     animation-delay: 3s;
     color: #dde78c;
 }
 
-.animated-words span:nth-child(3) {
-    -webkit-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s;
-    color: #dde78c;
-}
-
 .animated-words span:nth-child(4) {
-    -webkit-animation-delay: 9s;
-    -ms-animation-delay: 9s;
-    animation-delay: 9s;
+    -webkit-animation-delay: 4.5s;
+    -ms-animation-delay: 4.5s;
+    animation-delay: 4.5s;
     color: #dde78c;
 }
 
 .animated-words span:nth-child(5) {
-    -webkit-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s;
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
     color: #dde78c;
 }
 
@@ -374,9 +379,9 @@ header .container .toggle-btn.active span:nth-child(2) {
     opacity: 0;
     overflow: hidden;
     color: #dde78c;
-    -webkit-animation: animateWord 18s ease-out infinite 0s;
-    -ms-animation: animateWord 18s ease-out infinite 0s;
-    animation: animateWord 18s ease-out infinite 0s;
+    -webkit-animation: animateWord 6s ease-out infinite 0s;
+    -ms-animation: animateWord 6s ease-out infinite 0s;
+    animation: animateWord 6s ease-out infinite 0s;
 }
 
 @-webkit-keyframes animateWord {
@@ -1147,7 +1152,7 @@ header .container .toggle-btn.active span:nth-child(2) {
     height: 5.8rem;
     padding: 0 3rem;
     font-size: 1.6rem;
-    background-color: transparent;
+    /* background-color: transparent; */
     border: .1rem solid rgba(255 255 255 / .3);
     border-radius: .8rem;
     color: var(--mainColor);
