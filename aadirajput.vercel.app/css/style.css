@@ -168,6 +168,7 @@ header .container {
 header .container .logo {
     /* max-width: 12rem;
     max-height: 7rem; */
+    max-width: 53%;
     transition: transform 0.5s;
 }
 
@@ -1307,7 +1308,7 @@ footer .container p a:hover {
     header {
         border-bottom: none;
         background-color: transparent;
-        padding: 3rem 0;
+        padding: 1rem 0;
         transition: all .5s ease-in-out;
     }
 
