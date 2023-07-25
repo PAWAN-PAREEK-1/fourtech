@@ -117,7 +117,7 @@ img {
     padding-right: 1.5rem;
     margin-right: auto;
     margin-left: auto;
-    
+
 
     width: 100%;
 }
@@ -168,6 +168,7 @@ header .container {
 header .container .logo {
     /* max-width: 12rem;
     max-height: 7rem; */
+    max-width: 53%;
     transition: transform 0.5s;
 }
 
@@ -475,7 +476,7 @@ header .container .toggle-btn.active span:nth-child(2) {
 }
 
 /* .home .container {
-   
+
 } */
 
 /*End Home Section*/
@@ -1307,7 +1308,7 @@ footer .container p a:hover {
     header {
         border-bottom: none;
         background-color: transparent;
-        padding: 3rem 0;
+        padding: 1rem 0;
         transition: all .5s ease-in-out;
     }
 
@@ -1395,7 +1396,7 @@ footer .container p a:hover {
         width: 50%;
         padding-left: 8rem;
         margin-bottom: 0;
-       
+
     }
 
     .home .container .content .right img {
@@ -1443,7 +1444,7 @@ footer .container p a:hover {
         padding-left: 6.7rem;
         margin-bottom: .7rem;
         padding-top: 3rem;
-        
+
     }
 
     .resume .container .resume-container {
@@ -1588,7 +1589,7 @@ footer .container p a:hover {
     /* padding-bottom: 10px; */
     color: #FFF;
     /* font-family: Jost; */
-    font-size: 24px;
+    font-size: 22.8px;
     font-style: normal;
     font-weight: 600;
     line-height: 28.8px;
@@ -1628,7 +1629,7 @@ footer .container p a:hover {
     flex: 60%;
     display: flex;
     /* background: url(../img/features\ \(1\).svg);background-repeat: no-repeat; */
-    
+
 
     flex-direction: column;
     gap: 7rem;
@@ -1666,7 +1667,7 @@ justify-content:space-around;
 margin-left: 12rem; */
 }
  .facts-text{
-    
+
 display: flex;
 flex-direction: column;
 align-items:flex-start;
