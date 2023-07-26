@@ -1157,7 +1157,7 @@ header .container .toggle-btn.active span:nth-child(2) {
     /* background-color: transparent; */
     border: .1rem solid rgba(255 255 255 / .3);
     border-radius: .8rem;
-    color: var(--mainColor);
+    color: #000;
     outline: none;
     transition: all .3s ease;
 }
@@ -1169,7 +1169,7 @@ header .container .toggle-btn.active span:nth-child(2) {
 
 .contact .container .contact-inner .contact-right form .form-group input::placeholder,
 .contact .container .contact-inner .contact-right form .form-group textarea::placeholder {
-    color: var(--mainColor);
+    color: black;
 }
 
 .contact .container .contact-inner .contact-right form .form-group input:focus::placeholder,
@@ -1378,7 +1378,7 @@ footer .container p a:hover {
     }
 
     .home .container .content .left h3 {
-        font-size: 5rem;
+        font-size: 8rem;
         margin-bottom: -1.6rem;
     }
 
@@ -1390,12 +1390,14 @@ footer .container p a:hover {
         align-items: flex-start;
         text-align: left;
         width: 50%;
+        flex: 2;
     }
 
     .home .container .content .right {
         width: 50%;
         padding-left: 8rem;
         margin-bottom: 0;
+        flex: 1;
 
     }
 
@@ -1695,4 +1697,3 @@ line-height: 27px; /* 200% */
  }
 
 
- 
