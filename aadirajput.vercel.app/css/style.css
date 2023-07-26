@@ -175,6 +175,9 @@ img {
             /* margin-inline: auto; */
 
     }
+    .home .container .content .left{
+        padding-top: 5rem;
+    }
 
 }
 
