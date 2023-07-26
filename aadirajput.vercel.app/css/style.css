@@ -176,7 +176,8 @@ img {
 
     }
     .home .container .content .left{
-        padding-top: 5rem;
+        padding-block: 10rem;
+
     }
 
 }
