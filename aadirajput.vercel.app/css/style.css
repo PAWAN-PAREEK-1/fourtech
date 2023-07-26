@@ -150,6 +150,31 @@ img {
     .home{
         min-height: auto !important;
     }
+    .blub{
+        width: 8.7rem;
+    }
+    .right1{
+        margin-left: -34px;
+    }
+    .facts-section {
+        padding-bottom: 4rem;
+        margin-left: 8rem;
+    }
+    .facts-text img:nth-child(1){
+        max-width: 50%;
+        padding-top: 4rem;
+    }
+    .facts-text p{
+        margin-right: 12rem;
+    }
+    .facts-section img:nth-child(2){
+
+            max-width: 81%;
+            padding-top: 14px;
+            margin-right: 53px;
+            /* margin-inline: auto; */
+
+    }
 
 }
 
