@@ -127,6 +127,32 @@ img {
         width: 540px;
     }
 }
+@media(max-width: 768px) {
+    .home .container .content .right
+    {
+        display: none;
+    }
+    .home .container .content .left h3{
+        font-size: 4rem !important;
+    }
+    .about .container .content .right h1{
+        padding-right: 0;
+    }
+    .right01{
+        flex-direction: column !important;
+    }
+    .facts-section{
+        flex-direction: column !important;
+    }
+    .contact .container .contact-inner{
+        flex-direction: column !important;
+    }
+    .home{
+        min-height: auto !important;
+    }
+
+}
+
 
 @media(min-width: 768px) {
     .container {
