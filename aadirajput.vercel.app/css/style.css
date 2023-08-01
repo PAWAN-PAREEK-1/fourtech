@@ -1295,9 +1295,16 @@ footer .container p a:hover {
 
 }
 
+@media  (min-width: 990px) and (max-width:1200px) {
+    .home .container .content .left h3 {
+        font-size: 3.7rem !important;
+    }
+
+}
+
 @media(min-width: 768px) {
     .home .container .content .left h3 {
-        font-size: 6.5rem;
+        font-size: 3.7rem;
         margin-bottom: 1.2rem;
     }
 
@@ -1431,7 +1438,7 @@ footer .container p a:hover {
     }
 
     .home .container .content .left h3 {
-        font-size: 8rem;
+        font-size: 7.2rem;
         margin-bottom: -1.6rem;
     }
 
