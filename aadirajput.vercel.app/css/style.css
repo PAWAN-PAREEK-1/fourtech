@@ -206,7 +206,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
     background: linear-gradient(180deg, #000A1F 0%, #000C2F 100%);
     border-bottom: .1rem solid rgba(255 255 255 / .1);
     z-index: 9999;
@@ -1368,7 +1368,7 @@ footer .container p a:hover {
     header {
         border-bottom: none;
         background-color: transparent;
-        padding: 1rem 0;
+        /* padding: 1rem 0; */
         transition: all .5s ease-in-out;
     }
 
@@ -1755,5 +1755,35 @@ font-style: normal;
 font-weight: 400;
 line-height: 27px; /* 200% */
  }
+
+
+
+
+ .whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    background-color: #4CAF50;
+  }
+
+
+  .whatsapp-icon {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+}
+  .whatsapp-icon img {
+    width: 100%;
+    height: auto;
+  }
 
 
